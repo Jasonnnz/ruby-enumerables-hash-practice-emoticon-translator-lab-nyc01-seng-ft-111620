@@ -9,6 +9,7 @@ def load_library
     if emoji[emotion] == NIL
       emoji[emotion] = {:english => value[0], :japanese => value[1]}
     end
+  end  
   emoji        
 end
 
