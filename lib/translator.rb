@@ -21,7 +21,9 @@ def get_japanese_emoticon(file,emoticon)
     if emojis[emotion].has_value? emoticon
       return emojis[emotion][:japanese]
     end
-    
+    if !(emojis[emotion].has_value? emoticon)
+      message
+    end
   end
 end
 
