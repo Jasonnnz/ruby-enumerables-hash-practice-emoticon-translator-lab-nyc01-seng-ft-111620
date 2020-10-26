@@ -1,9 +1,9 @@
 # require modules here
 require 'yaml'
 
-def load_library
+def load_library(file_path)
   # code goes here
-  emojis = YAML.load_file('emoticons.yml')
+  emojis = YAML.load_file(file_path)
   emoji = {}
   emojis.each do |emotion, value|
     if emoji[emotion] == NIL
