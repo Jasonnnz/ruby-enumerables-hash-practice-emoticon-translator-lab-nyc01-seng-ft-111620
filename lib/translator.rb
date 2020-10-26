@@ -21,5 +21,7 @@ def get_english_meaning(file, emoticon)
   # code goes here
   emojis = load_file(file)
   if emojis.include?(emoticon) == false 
-    puts "Sorr"
+    puts "Sorry, that emoticon was not found"
+  end
+  
 end
