@@ -3,7 +3,7 @@ require 'yaml'
 
 def load_library
   # code goes here
-  emojis = YAML.load_library('emoticons.yml')
+  emojis = YAML.load_file('emoticons.yml')
   emoji = {}
   emojis.each do |emotion, value|
     if emoji[emotion] == NIL
