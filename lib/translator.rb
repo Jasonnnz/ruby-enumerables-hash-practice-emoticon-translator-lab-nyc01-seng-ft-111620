@@ -10,8 +10,9 @@ def load_library
       emoji[emotion] = {:english, :japanese}
     end
     emoji[emotion][:english] = value[0]
-      
-          
+    emoji[emotion][:japanese] = value[1]
+  end
+  emoji        
 end
 
 def get_japanese_emoticon
