@@ -21,7 +21,7 @@ def get_english_meaning(file, emoticon)
   # code goes here
   emojis = load_library(file)
   emojis.each do |emotion, values|
-    if emojis[emotion][values].include? emoticon
+    if emojis[emotion][:japanese].include? emoticon
       return emotion
     else
       puts "Sorry, that emoticon was not found"
