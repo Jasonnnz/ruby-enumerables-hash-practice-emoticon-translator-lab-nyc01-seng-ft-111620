@@ -22,6 +22,7 @@ def get_japanese_emoticon(file,emoticon)
       return emojis[emotion][:japanese]
     end
   end
+  message
 end
 
 def get_english_meaning(file, emoticon)
