@@ -21,7 +21,7 @@ def get_english_meaning(file, emoticon)
   # code goes here
   emojis = load_library(file)
   if emojis.find(emoticon) == nil
-      puts "Sorry, that emoticon was not found"
+      return "Sorry, that emoticon was not found"
     end
   # emojis.each do |emotion, values|
     
