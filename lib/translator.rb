@@ -7,7 +7,7 @@ def load_library
   emoji = {}
   emojis.each do |emotion, value|
     if emoji[emotion] == NIL
-      emoji[emotion] = {:english, :japanese}
+      emoji[emotion] = {:english => "", :japanese => ""}
     end
     emoji[emotion][:english] = value[0]
     emoji[emotion][:japanese] = value[1]
