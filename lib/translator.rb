@@ -19,8 +19,9 @@ def get_japanese_emoticon(file,emoticon)
   message = "Sorry, that emoticon was not found"
   emojis.each do |emotion, values|
     if emojis[emotion].has_value? emoticon
-      return emojis[emotion][:japanese]
+      return 
     end
+    
   end
 end
 
