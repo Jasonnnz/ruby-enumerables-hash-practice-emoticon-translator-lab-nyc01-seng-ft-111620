@@ -17,6 +17,9 @@ def get_japanese_emoticon
   # code goes here
 end
 
-def get_english_meaning
+def get_english_meaning(file, emoticon)
   # code goes here
+  emojis = load_file(file)
+  if emojis.include?(emoticon) == false 
+    puts "Sorr"
 end
