@@ -16,6 +16,7 @@ end
 def get_japanese_emoticon(file,emoticon)
   # code goes here
   emojis = load_library(file)
+  message = "Sorry, that emoticon was not found"
   emojis.each do |emotion, values|
     if emojis[emotion].has_value? emoticon
       return emojis[emotion][:japanese]
@@ -30,7 +31,7 @@ def get_english_meaning(file, emoticon)
     if emojis[emotion].has_value? emoticon
       return emotion
     else
-      "Sorry, that emoticon was not found"
+      
     end
   end  
   
