@@ -33,5 +33,5 @@ def get_english_meaning(file, emoticon)
       return emotion
     end
   end  
-  
+  message
 end
