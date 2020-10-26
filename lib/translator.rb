@@ -18,7 +18,7 @@ def get_japanese_emoticon(file,emoticon)
   emojis = load_library(file)
   emojis.each do |emotion, values|
     if emojis[emotion].has_value? emoticon
-      return emojis[emotion][:english]
+      return emojis[emotion][:japanese]
     end
   end
 end
