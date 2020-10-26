@@ -20,6 +20,7 @@ def get_japanese_emoticon(file,emoticon)
     if emojis[emotion].has_value? emoticon
       return emojis[emotion][:english]
     end
+  end
 end
 
 def get_english_meaning(file, emoticon)
