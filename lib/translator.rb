@@ -1,9 +1,17 @@
 # require modules here
-require emoticions.yml
+require 'yaml'
 
 def load_library
   # code goes here
-  
+  emojis = YAML.load_file('emoticons.yml')
+  emoji = {}
+  emojis.each do |emotion, value|
+    if emoji[emotion] == NIL
+      emoji[emotion] = {:english, :japanese}
+    end
+    emoji[emotion][:english] = value[0]
+      
+          
 end
 
 def get_japanese_emoticon
